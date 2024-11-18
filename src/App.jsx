@@ -5,13 +5,17 @@ import "./styles/App.css";
 
 export const App = () => {
   const [characters, setCharacters] = useState([]);
-  const [filters, setFilters] = useState({ status: "", gender: "", species: "" });
+  // const [filters, setFilters] = useState({ status: "", gender: "", species: "" });
+  const [filters, setFilters] = useState({ status: "", gender: "", species: "", name: "" });
 
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
+        // const response = await fetch(
+        //   `https://rickandmortyapi.com/api/character?status=${filters.status}&gender=${filters.gender}&species=${filters.species}`
+        // );
         const response = await fetch(
-          `https://rickandmortyapi.com/api/character?status=${filters.status}&gender=${filters.gender}&species=${filters.species}`
+          `https://rickandmortyapi.com/api/character?name=${filters.name}&status=${filters.status}&gender=${filters.gender}&species=${filters.species}`
         );
         const data = await response.json();
         setCharacters(data.results || []);
