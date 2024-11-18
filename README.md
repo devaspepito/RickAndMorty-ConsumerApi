@@ -12,7 +12,10 @@
 '--'   '--'   `------'`------'   `-----'      `-----' `--'   `--'  `------' 
 ```
 
+# Colaborative Group
+- Brayan Ocampo Lopez
+- Santiago Otalvaro Muñoz
+- Valentina Tobon Morales
+
 # Video WhitOut Code
-<video src="assets/RickAndMortyWithOutCode.mov" controls width="600"></video>
 # Video Whit Code
-<video src="assets/RickAndMortyWithCode.mov" controls width="600"></video>
