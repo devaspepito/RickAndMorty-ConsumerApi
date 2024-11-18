@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import CharacterList from "./components/CharacterList";
-import Filters from "./components/Filters";
+import { CharacterList } from "./components/CharacterList";
+import { Filters } from "./components/Filters";
 import "./styles/App.css";
 
 export const App = () => {
