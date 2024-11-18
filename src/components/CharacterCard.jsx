@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/CharacterCard.css";
 
 const CharacterCard = ({ character }) => {
   const { name, image, species, status } = character;
