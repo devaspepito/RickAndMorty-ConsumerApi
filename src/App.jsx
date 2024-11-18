@@ -25,7 +25,7 @@ export const App = () => {
 
   return (
     <div className="App">
-      <h1>Rick and Morty Characters</h1>
+      <h1>Rick and Morty Consumer API</h1>
       <Filters filters={filters} setFilters={setFilters} />
       <CharacterList characters={characters} />
     </div>

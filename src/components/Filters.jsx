@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Filters.css";
 
 export const Filters = ({ filters, setFilters }) => {
   const updateFilter = (e) => {

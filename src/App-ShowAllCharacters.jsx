@@ -9,7 +9,6 @@ export const App = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Función para obtener todos los personajes
   const fetchCharacters = async () => {
     try {
       setLoading(true);
@@ -19,7 +18,6 @@ export const App = () => {
       let page = 1;
       let totalPages;
 
-      // Hacer solicitudes hasta obtener todos los personajes
       do {
         const response = await fetch(
           `https://rickandmortyapi.com/api/character?page=${page}&status=${filters.status}&gender=${filters.gender}&species=${filters.species}`
@@ -29,7 +27,7 @@ export const App = () => {
         allCharacters = [...allCharacters, ...data.results];
         totalPages = data.info.pages;
         page++;
-      } while (page <= totalPages);  // Continuar hasta la última página
+      } while (page <= totalPages);
 
       setCharacters(allCharacters);
     } catch (error) {
@@ -40,7 +38,6 @@ export const App = () => {
     }
   };
 
-  // Usamos useEffect para llamar a la API cuando los filtros cambien
   useEffect(() => {
     fetchCharacters();
   }, [filters]);
