@@ -18,7 +18,7 @@
 - Valentina Tobon Morales
 
 # Video WhitOut Code
-
-[Uploading RickAndMortyWithOutCode.mp4…](https://github.com/user-attachments/assets/28b8d6ac-d7bf-4536-a84e-2b08ae6a6298)
+https://github.com/user-attachments/assets/28b8d6ac-d7bf-4536-a84e-2b08ae6a6298
 
 # Video Whit Code
+https://github.com/user-attachments/assets/006be755-ab6e-403e-91e3-ae043edab47c
