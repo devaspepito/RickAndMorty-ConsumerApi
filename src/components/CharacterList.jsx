@@ -1,7 +1,7 @@
 import React from "react";
 import CharacterCard from "./CharacterCard";
 
-const CharacterList = ({ characters }) => {
+export const CharacterList = ({ characters }) => {
   return (
     <div className="character-list">
       {characters.length > 0 ? (
@@ -14,5 +14,3 @@ const CharacterList = ({ characters }) => {
     </div>
   );
 };
-
-export default CharacterList;

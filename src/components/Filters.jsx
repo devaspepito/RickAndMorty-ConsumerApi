@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filters = ({ filters, setFilters }) => {
+export const Filters = ({ filters, setFilters }) => {
   const updateFilter = (e) => {
     const { name, value } = e.target;
     setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
@@ -25,12 +25,17 @@ const Filters = ({ filters, setFilters }) => {
 
       <select name="species" value={filters.species} onChange={updateFilter}>
         <option value="">All Species</option>
-        <option value="human">Human</option>
-        <option value="alien">Alien</option>
-        {/* Add more species if needed */}
+        <option value="Human">Human</option>
+        <option value="Alien">Alien</option>
+        <option value="Humanoid">Humanoid</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Mythological Creature">Mythological Creature</option>
+        <option value="Animal">Animal</option>
+        <option value="Robot">Robot</option>
+        <option value="Cronenberg">Cronenberg</option>
+        <option value="Disease">Disease</option>
+        <option value="unknown">Unknown</option>
       </select>
     </div>
   );
 };
-
-export default Filters;
